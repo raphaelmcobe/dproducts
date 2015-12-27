@@ -1,6 +1,8 @@
 library(shiny)
 library(rCharts)
 
+require(markdown)
+
 shinyUI(
     navbarPage("IMDB app",
         tabPanel("Plot",

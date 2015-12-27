@@ -1,0 +1,8 @@
+name: DataProduct
+account: raphaelmcobe
+server: shinyapps.io
+bundleId: 339497
+url: https://raphaelmcobe.shinyapps.io/DataProduct
+when: 1451232324.6716
+asMultiple: FALSE
+asStatic: FALSE
