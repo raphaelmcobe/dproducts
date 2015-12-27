@@ -49,8 +49,6 @@ plotRatingComparison <- function(imdb, minDate, maxDate, selectedGender){
     selectedDatasetRating <- aggregate(imdb$rating, by = list(year = imdb$year), FUN = mean, na.rm=T)
     selectedDataset$rating <- selectedDatasetRating$x
     filteredData <- filter(selectedDataset, year > minDate & year < maxDate)
-    plot <- hPlot(x = "year", y = "rating", data = filteredData, type = "line", width=480)
-    plot$addParams(dom = "ratingComparison")
 
     h <- Highcharts$new()
     h$xAxis(categories = filteredData$year, tickInterval=5, width=480)
